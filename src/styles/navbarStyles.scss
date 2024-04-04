@@ -1,0 +1,29 @@
+@import "./colors.scss";
+
+.navbar {
+  background-color: $divBg;
+  border-radius: 1rem;
+  padding: 1rem;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    li {
+      list-style: none;
+      background-color: $genreTab;
+      border-radius: 0.7rem;
+      cursor: pointer;
+      &:hover {
+        scale: 1.05;
+        background-color: $genreTabHover;
+      }
+      button {
+        border: none;
+        background-color: transparent;
+        padding: 0.7rem 0.9rem;
+      }
+    }
+  }
+}
